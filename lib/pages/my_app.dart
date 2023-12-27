@@ -1,5 +1,7 @@
 
 import 'package:flutter/material.dart';
+import 'package:foody/provider/like_provider.dart';
+import 'package:provider/provider.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 import '../apps/router/router.dart';
@@ -12,9 +14,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-      return  MaterialApp.router(
-        debugShowCheckedModeBanner: false,
-        routerConfig: RouterCustom.router,
+      return  ChangeNotifierProvider(
+        create: (BuildContext context) => LikeProvider(),   // cai nay phai extends ChangeNotifier (Material)
+        child: MaterialApp.router(
+          debugShowCheckedModeBanner: false,
+          routerConfig: RouterCustom.router,
+        ),
       );
   }
 }

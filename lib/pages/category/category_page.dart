@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:foody/apps/router/router_name.dart';
-import 'package:foody/mockup/item_mockup.dart';
+import 'package:foody/apps/mockup/item_mockup.dart';
 import 'package:go_router/go_router.dart';
 import 'package:transparent_image/transparent_image.dart';
 
@@ -19,7 +19,7 @@ class CategoryPage extends StatelessWidget {
           child: InkWell(
             onTap: () {
               context.goNamed(RouterName.CATEGORY_PRODUCT, extra: {
-                'id_extra': '1',
+                'id_extra': '188, Tôm Hùm Bông',
                 'description_extra': 'description'
               });
             },

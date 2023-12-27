@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foody/apps/models/article.dart';
 
 import 'package:foody/pages/category/category_page.dart';
 import 'package:foody/pages/root_page.dart';
@@ -27,10 +28,15 @@ class RouterCustom {
               routes: <RouteBase>[
                 GoRoute(
                   name: RouterName.PRODUCT,
-                  path: 'product/:id/:description',
+                  // path: 'product/:id/:description',
+                  path: 'product',
                   builder: (BuildContext context, GoRouterState state) {
-                    Map data = state.pathParameters;
+                    /* Map data = state.pathParameters;
                     return  ProductPage(id: data['id']);
+                     */
+
+                    Article article = state.extra as Article;
+                    return ProductPage(article: article);
                   },
                 ),
               ],
@@ -48,6 +54,7 @@ class RouterCustom {
                   path: 'product',
                   builder: (BuildContext context, GoRouterState state) {
                     Map data = state.extra as Map;
+
                     return  ProductPage(id:  data['id_extra'].toString());
                   },
                 ),

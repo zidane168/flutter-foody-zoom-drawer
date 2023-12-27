@@ -80,6 +80,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "like_button",
+      "rootUri": "file:///Users/vihuuly/.pub-cache/hosted/pub.dev/like_button-2.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "lints",
       "rootUri": "file:///Users/vihuuly/.pub-cache/hosted/pub.dev/lints-2.1.1",
       "packageUri": "lib/",
@@ -110,8 +116,20 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "nested",
+      "rootUri": "file:///Users/vihuuly/.pub-cache/hosted/pub.dev/nested-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "path",
       "rootUri": "file:///Users/vihuuly/.pub-cache/hosted/pub.dev/path-1.8.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "provider",
+      "rootUri": "file:///Users/vihuuly/.pub-cache/hosted/pub.dev/provider-6.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -182,7 +200,7 @@
       "languageVersion": "3.2"
     }
   ],
-  "generated": "2023-12-27T04:17:22.009734Z",
+  "generated": "2023-12-27T08:03:49.855436Z",
   "generator": "pub",
   "generatorVersion": "3.2.3"
 }

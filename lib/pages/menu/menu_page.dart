@@ -27,7 +27,10 @@ class MenuPage extends StatelessWidget {
             ),
             ListTile(
               onTap: () {
-                context.goNamed(RouterName.PRODUCT);
+                context.goNamed(RouterName.PRODUCT, pathParameters: {
+                  'id': "Từ menu",
+                  "description": "description"
+                });
               },
               leading: const Icon(
                 CupertinoIcons.calendar,
@@ -47,7 +50,10 @@ class MenuPage extends StatelessWidget {
             ),
             ListTile(
               onTap: () {
-                context.goNamed(RouterName.CATEGORY_PRODUCT);
+                context.goNamed(RouterName.CATEGORY_PRODUCT, extra: {
+                  'id_extra': "Từ menu (extra)",
+                  "description_extra": "description"
+                });
               },
               leading: const Icon(
                 CupertinoIcons.square_favorites,
