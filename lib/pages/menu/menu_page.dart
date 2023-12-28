@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:foody/apps/router/router_name.dart';
+import 'package:foody2/apps/router/router_name.dart';
 import 'package:go_router/go_router.dart';
 
 class MenuPage extends StatelessWidget {
@@ -27,16 +27,13 @@ class MenuPage extends StatelessWidget {
             ),
             ListTile(
               onTap: () {
-                context.goNamed(RouterName.PRODUCT, pathParameters: {
-                  'id': "Từ menu",
-                  "description": "description"
-                });
+                context.goNamed(RouterName.LIKE);
               },
               leading: const Icon(
-                CupertinoIcons.calendar,
+                CupertinoIcons.square_favorites,
                 color: Colors.white,
               ),
-              title:const Text("Product Screen", style: TextStyle(fontSize: 13, color: Colors.white)),
+              title:const Text("My Faviour Screen", style: TextStyle(fontSize: 13, color: Colors.white)),
             ),
             ListTile(
               onTap: () {
@@ -48,19 +45,17 @@ class MenuPage extends StatelessWidget {
               ),
               title: const Text("Category Screen", style: TextStyle(fontSize: 13, color: Colors.white)),
             ),
-            ListTile(
+           /*  ListTile(
               onTap: () {
-                context.goNamed(RouterName.CATEGORY_PRODUCT, extra: {
-                  'id_extra': "Từ menu (extra)",
-                  "description_extra": "description"
-                });
+                context.goNamed(RouterName.SETTING );
               },
               leading: const Icon(
                 CupertinoIcons.square_favorites,
                 color: Colors.white,
               ),
-              title: const Text("Category Product Screen", style: TextStyle(fontSize: 13, color: Colors.white)),
+              title: const Text("Setting Screen", style: TextStyle(fontSize: 13, color: Colors.white)),
             ),
+            */
           ],
         )
       )

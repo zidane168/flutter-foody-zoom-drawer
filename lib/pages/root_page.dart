@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
-import 'package:foody/pages/home/home_page.dart';
-import 'package:foody/pages/menu/menu_page.dart';
+import 'package:foody2/pages/home/home_page.dart';
+import 'package:foody2/pages/menu/menu_page.dart';
 
 class RootPage extends StatelessWidget {
 

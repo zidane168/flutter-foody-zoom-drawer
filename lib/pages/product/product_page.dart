@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:foody/apps/mockup/item_mockup.dart';
-import 'package:foody/apps/models/article.dart';
-import 'package:foody/provider/like_provider.dart';
+import 'package:foody2/apps/mockup/item_mockup.dart';
+import 'package:foody2/apps/models/article.dart';
+import 'package:foody2/provider/like_provider.dart';
 import 'package:like_button/like_button.dart';
 import 'package:provider/provider.dart';
 import 'package:transparent_image/transparent_image.dart';
@@ -15,9 +15,8 @@ class ProductPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Material(
-      child: SafeArea(
-        child: Column(
+    return Scaffold(
+        body: Column(
           children: [
             Expanded(
                 child: InkWell(
@@ -43,15 +42,27 @@ class ProductPage extends StatelessWidget {
                       Positioned(
                           bottom: 0,
                           right: 0,
-                          child:  LikeButton(
-                            isLiked: true,
-                            onTap: (like) {
+                          child:  Consumer<LikeProvider>(
+                            builder: (BuildContext context, LikeProvider value, Widget? child)  => LikeButton(
+                              isLiked: value.listLike.contains(article?.id), // muc dich Consumer la thong bao cho nhung noi cap nhat theo giua hai man hinh voi nhau
+                              onTap: (like) {
+                                int id = article?.id ?? 0;
+                                context.read<LikeProvider>().onLike(id);
+                                return Future.value(!like);
+                              },
+                            ),
+                          ),
 
-                              int id = article?.id ?? 0;
-                              context.read<LikeProvider>().onLike(id);
-                              return Future.value(!like);
-                            },
-                          )
+                            /*
+                              child:  LikeButton(
+                              isLiked: true,
+                              onTap: (like) {
+      
+                                int id = article?.id ?? 0;
+                                context.read<LikeProvider>().onLike(id);
+                                return Future.value(!like);
+                              },
+                            ) */
                       ),
                     ],
                   ),
@@ -71,7 +82,6 @@ class ProductPage extends StatelessWidget {
               )
             ),
           ],
-        ),
       ),
     );
   }

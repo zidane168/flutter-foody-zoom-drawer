@@ -15,4 +15,14 @@ class LikeProvider extends ChangeNotifier {
     print (listLike);
     notifyListeners();    // lang nghe de thong bao lai cho ben UI rebuild lai
   }
+
+  void onDelete(int id) {
+    listLike.remove(id);
+    notifyListeners();
+  }
+
+  void onDeleteAll() {
+    listLike = [];
+    notifyListeners();
+  }
 }

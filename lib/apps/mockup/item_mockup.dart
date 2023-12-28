@@ -1,6 +1,6 @@
-import 'package:foody/apps/models/article.dart';
+import 'package:foody2/apps/models/article.dart';
 
-List<String> Datas = [
+List<String> datas = [
   'https://static.hotdeal.vn/images/1706/1705617/500x500/367706-saigon-prince-buffet-hai-san-cua-bien-sashimi-khong-gioi-han.jpg',
   'https://static.hotdeal.vn/images/1704/1704298/500x500/367552-yaki-buffet-hai-san-bo-my-hon-40-mon.jpg',
   'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcToGRzyTndO6rReUGXrqaQFjKj_RFA1Kt-uRPadjEXR_N5X1nKU6IAuB7rj8acBgab9aMmm6NpxTG5lksl3416EnfWrLZ7MYOXl2j3xTIo&usqp=CAE',
@@ -15,42 +15,42 @@ List<String> Datas = [
 
 List<Article> dataMockup = [
   Article(id: 1,
-      image: Datas[0],
+      image: datas[0],
       title: 'Lẩu Cua Hải Sản',
       description: 'Đây là lẩu cua hải sản, Đây là lẩu cua hải sản, Đây là lẩu cua hải sản, Đây là lẩu cua hải sản, Đây là lẩu cua hải sản, Đây là lẩu cua hải sản!!!'),
 
   Article(id: 2,
-      image: Datas[1],
+      image: datas[1],
       title: 'Buffer Bò My YaKi',
       description: 'Đây là lẩu Bò mỹ Yaki, Đây là lẩu Bò mỹ Yaki, Đây là lẩu Bò mỹ Yaki, Đây là lẩu Bò mỹ Yaki, Đây là lẩu Bò mỹ Yaki, Đây là lẩu Bò mỹ Yaki, Đây là lẩu Bò mỹ Yaki, Đây là lẩu Bò mỹ Yaki, Đây là lẩu Bò mỹ Yaki, Đây là lẩu Bò mỹ Yaki, !!!'),
 
   Article(id: 3,
-      image: Datas[2],
+      image: datas[2],
       title: 'Tôm Hùm Baby',
       description: 'Tôm Hùm Baby là một trong những món ăn quen thuộc của sai gòn!!!Tôm Hùm Baby là một trong những món ăn quen thuộc của sai gòn!!!Tôm Hùm Baby là một trong những món ăn quen thuộc của sai gòn!!!'),
 
   Article(id: 4,
-      image: Datas[3],
+      image: datas[3],
       title: 'Hàu Hấp',
       description: 'Hàu Hấp kinh điển, nổi tiếng ở miền nam, Hàu Hấp kinh điển, nổi tiếng ở miền nam,Hàu Hấp kinh điển, nổi tiếng ở miền nam,vHàu Hấp kinh điển, nổi tiếng ở miền nam'),
 
   Article(id: 5,
-      image: Datas[4],
+      image: datas[4],
       title: 'Nghêu Hải sản',
       description: 'Nghêu đặc sản Nha Trang!!!Nghêu đặc sản Nha Trang!!!Nghêu đặc sản Nha Trang!!!Nghêu đặc sản Nha Trang!!!Nghêu đặc sản Nha Trang!!!Nghêu đặc sản Nha Trang!!!'),
 
   Article(id: 6,
-      image: Datas[5],
+      image: datas[5],
       title: 'Lẩu bò 3 con Sâu',
       description: 'Lẩu bò 3 con sâu sẽ mang đến cho các bạn một giây phút ko thể nào quên nỗi, dac biệt thơm ngon'),
 
   Article(id: 7,
-      image: Datas[6],
+      image: datas[6],
       title: 'Buffet 555k LibertyCental',
       description: 'Món ăn đáng ăn nhất cuối tun, bạn sẽ được trải nghiệm món ăn tươi ngon '),
 
   Article(id: 8,
-      image: Datas[7],
+      image: datas[7],
       title: 'Tôm nướng cầu chữ U Quận 8',
       description: 'Tôm nướng cầu chữ U quận 8, dac biệt thơm ngon'),
 ];
